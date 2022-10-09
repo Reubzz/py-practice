@@ -103,11 +103,41 @@ my_function("b")
 
 ### Explain indexing, negative indexing and slicing with respect to tuple.
 ### Write short note on built in tuple function.
+
+- cmp(tuple1, tuple2) - It compares two tuples and returns true if tuple1 is greater than tuple2 otherwise false.
+- len(tuple) - It calculates the length of the tuple.
+- max(tuple) - It returns the maximum element of the tuple
+- min(tuple - It returns the minimum element of the tuple.
+- tuple(seq) - It converts the specified sequence to the tuple.
+
 ### Explain basic tuple operations.
 ### Explain tuple and dictionary with program.
 ### Explain built in dictionary function.
-### Explain any 5 built dictionary function.
+
+- cmp(dict1,dict2)-It compares the items of both the dictionary and returns true if the first dictionary values are greater than the second dictionary, otherwise it returnfalse.
+- len(dict)-It is used to calculate the length of the dictionary.
+- str(dict) -It converts the dictionary into the printable string representation.
+- type(variable) -It is used to print the type of the passed variable.
+
+### Explain any 5 built dictionary methods.
+
+- dict.clear() It is used to delete all the items of the dictionary.
+- dict.copy() It returns a shallow copy of the dictionary.
+- dict.items() It returns all the key-value pairs as a tuple.
+- dict.keys() It returns all the keys of the dictionary.
+- dict.values() It returns all the values of the dictionary.
+
 ### Explain any 5 built in exception.
+
+- ArithmeticError- Raised when an error occurs in numeric calculations
+- FloatingPointError-Raised when a floating point calculation fails
+- ImportError-Raised when an imported module does not exist
+- KeyError-Raised when a key does not exist in a dictionary
+- MemoryError-Raised when a program runs out of memory
+- NameError-Raised when a variable does not exist
+- SyntaxError-Raised when a syntax error occurs
+- SystemExit-Raised when the sys.exit() function is called
+
 ### Explain exception with args with proper example.
 ### What is file & What are its operating modes.
 ### Write a short note to demonstate exception handling in python.
