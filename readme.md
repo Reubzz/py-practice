@@ -55,11 +55,8 @@ Three kinds of errors can occur in a program: Syntax errors, Runtime errors, and
 ### Explain operators in python with suitable example (5 opeerators)
 ### Write a program to use membership and Indetity operators.
 ### Explain Compilar and Interpreter.
-### Short note on conditional statements.
-### Short note on loopong statemetns in python.
-### Write a short program to demonstrate use of looping statemnts.
-### Write a short program to demonstrate use of conditional statements.
-
+### Short note on conditional statements. Write a short program to demonstrate the same.
+### Short note on looping statemetns in python. Write a short program to demonstrate the same.
 </details>
 
 <details> 
@@ -69,10 +66,24 @@ Three kinds of errors can occur in a program: Syntax errors, Runtime errors, and
 </summary> 
 
 ### Explain any 5 math functions in Python in detail.
-### Explain any 5 math functions in Python in detail.
 ### Explain parameteres and arguments with proper example
+
+The terms parameter and argument can be used for the same thing: information that are passed into a function.
+From a function's perspective:
+- A parameter is the variable listed inside the parentheses in the function definition.
+- An argument is the value that are sent to the function when it is called.
+    Key Terms:
+    - argument-A value provided as input to a function.
+    - parameter-A variable identifier provided as input to a function.
+eg:-
+```py
+def my_function(a,c):
+	print(a + " " + c)
+my_function("b")
+```
+
 ### Explain the difference between import module and form module.
-### Write a short program to demonstrate use of dunction returning value.
+### Write a short program to demonstrate use of function returning value.
 ### Explain any 5 string methods or Explain any 5 built in functions.
 ### Explain the string operators with the help of different operator.
 ### Explain the use of "in" and "not" operator.
