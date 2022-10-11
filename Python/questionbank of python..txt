@@ -1,0 +1,311 @@
+UNIT 1
+
+Q.what are the features of python.
+>>Features in Python
+Free and Open Source. ...
+Easy to code. ...
+Object-Oriented Language. ...
+GUI Programming Support. ...
+High-Level Language. ...
+Extensible feature. ...
+Python is a Portable language. ...
+Python is an Integrated language.
+
+s
+
+Q. explain fruitful function and void functionn with example. 
+>>Python provides various functions which may or may not return value.
+The function which return any value are called as fruitful function.
+The function which does not return any value are called as void function.
+Fruitful functions means the function that gives result or return values after execution.
+Some functions gets executed but doesn’t return any value.
+While writing fruitful functions we except a return value and so we must assign it to a variable to hold return value.
+
+In void function you can display a value on screen but cannot return a value.
+A void function may or may not have return statement, if void function has return statement then it is written without any expression
+
+eg. Void function without return statement
+
+def fun1():
+    print("Python")
+Void function with return statement
+
+def fun2():
+    print("ITVoyagers")
+    return
+Void function with parameter without return statement
+
+def fun1(a,b):
+    print("sum of a and b", a+b)
+fun1(5,2)
+Fruitful function with parameter and return statement
+
+def fun2(a,b):
+    return a+b
+print(fun2(5,8))
+
+
+
+Q.write a program to generate fibonaic series.
+>>def fib(n):
+    a = 0
+    b = 1
+    if n == 1:
+        print(a)
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c = a + b
+            a = b
+            b = c
+            print(c)
+fib(10) 
+
+
+Q.explain different list operation.
+>>refere the pdf.
+
+Q.explain tuple in detail.
+>>refere the pdf.
+
+Q. explain dictionary.
+>>refere the pdf.
+
+Q.write a program to search armstrong.
+>>
+num = int(input("Enter a number: "))
+
+sum = 0
+
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+
+Q.Wriet a program on palidrome
+>># Program to check if a string is palindrome or not
+
+my_str = 'aIbohPhoBiA'
+
+# make it suitable for caseless comparison
+my_str = my_str.casefold()
+
+# reverse the string
+rev_str = reversed(my_str)
+
+# check if the string is equal to its reverse
+if list(my_str) == list(rev_str):
+   print("The string is a palindrome.")
+else:
+   print("The string is not a palindrome.")
+
+Q.write a program on fratorial.
+>># Python program to find the factorial of a number provided by the user.
+
+# change the value for a different result
+num = 7
+
+# To take input from the user
+#num = int(input("Enter a number: "))
+
+factorial = 1
+
+# check if the number is negative, positive or zero
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
+
+Q.Advantages and disadavtages of python.
+>>Advantages of Python
+Easy-to-learn and Easy-to-use
+Improves Productivity
+Interpreted Language
+Open-source
+Easily Portable
+Massive Libraries
+Easy-to-integrate with Other Programming Languages
+
+Disadvantages of Python
+Low Speed
+Inefficient Memory Consumption
+Weak in Programming for Mobile Devices
+Difficult-to-interact Database Layer
+Prone to Cause Runtime Errors
+
+refferre to pdf.
+ 
+Q.explain debugging and error in python.
+Errors occurring in programming are called as bugs.The process of tracking this bugs is called as debugging. There are three types of errors that can occur while coding : Syntax Error, Runtime Error and Semantic Error.
+
+Syntax Error
+The syntax is a defined structure or set of rules while writing a program. If someone fails to maintain correct syntax ,then it may lead to Syntax Error. eg- >>> 1+2=a
+SyntaxError: can't assign to operator
+
+Runtime Error
+This type of error does not appear until program is executed. In this,program is executed successfully without syntax or logical error and this type of error occurs at runtime i.e. while accepting values from user. Runtime errors are also called as exceptions or interruptions in program.
+eg-enter a number5
+Traceback (most recent call last):
+  File "C:/Python34/runtime error.py", line 5, in 
+    sum=a+b+c+d
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+Semantic Error
+In this program will be executed without any error on prompt but will not give desired output.Such type of error is called Semantic error. Semantic errors are also called as logical errors. It is difficult to track such errors as it requires to go backward to look for output and find errors causing incorrect output.
+
+
+Q.write a short note on python data type.
+Numbers
+Number stores numeric values. The integer, float, and complex values belong to a Python Numbers data-type. Python provides the type() function to know the data-type of the variable. Similarly, the isinstance() function is used to check an object belongs to a particular class.
+
+Python supports three types of numeric data.
+Int - Integer value can be any length such as integers 10, 2, 29, -20, -150 etc. Python has no restriction on the length of an integer. Its value belongs to int
+Float - Float is used to store floating-point numbers like 1.9, 9.902, 15.2, etc. It is accurate upto 15 decimal points.
+complex - A complex number contains an ordered pair, i.e., x + iy where x and y denote the real and imaginary parts, respectively. The complex numbers like 2.14j, 2.0 + 2.3j, etc.
+
+Sequence Type
+String
+The string can be defined as the sequence of characters represented in the quotation
+marks. In Python, we can use single, double, or triple quotes to define a string.
+String handling in Python is a straightforward task since Python provides built-in functions and
+operators to perform operations in the string.
+In the case of string handling, the operator + is used to concatenate two strings as the
+operation "hello"+" python" returns "hello python".
+The operator * is known as a repetition operator as the operation "Python" *2 returns
+'Python Python'.
+
+List
+Python Lists are similar to arrays in C. However, the list can contain data of different types.
+The items stored in the list are separated with a comma (,) and enclosed within square
+brackets [].
+We can use slice [:] operators to access the data of the list. The concatenation operator
+(+) and repetition operator (*) works with the list in the same way as they were working
+with the strings.
+
+Tuple
+A tuple is similar to the list in many ways. Like lists, tuples also contain the collection of
+the items of different data types. The items of the tuple are separated with a comma (,)
+and enclosed in parentheses ().
+A tuple is a read-only data structure as we can't modify the size and value of the items of
+a tuple.
+
+Dictionary
+Dictionary is an unordered set of a key-value pair of items. It is like an associative array or
+a hash table where each key stores a specific value. Key can hold any primitive data type,
+whereas value is an arbitrary Python object.
+The items in the dictionary are separated with the comma (,) and enclosed in the curly
+braces {}.
+
+Boolean
+Boolean type provides two built-in values, True and False. These values are used to
+determine the given statement true or false. It denotes by the class bool. True can be
+represented by any non-zero value or 'T' whereas false can be represented by the 0 or 'F'.
+Consider the following example.
+
+
+Set
+Python Set is the unordered collection of the data type. It is iterable, mutable(can modify
+after creation), and has unique elements. In set, the order of the elements is undefined; it
+may return the changed sequence of the element. The set is created by using a built-in
+function set(), or a sequence of elements is passed in the curly braces and separated by
+the comma. It can contain various types of values. Consider the following example.
+
+
+Q.write a program to use membership and indetity operations
+Membership operation
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9]
+for item in list1:
+    if item in list2:
+        print("overlapping")
+    else:
+        print("not overlapping")
+
+indetity operation
+x = 5
+y = 5
+print(x is y)
+id(x)
+id(y)
+
+
+Q.explain compilers and interperter.
+ 
+
+Q. write short note on conditional statement.
+Decision-making in a programming language is automated using conditional statements, in which Python evaluates the code to see if it meets the specified conditions.
+The conditions are evaluated and processed as true or false. If this is found to be true, the program is run as needed.
+
+Python has six conditional statements that are used in decision-making:-
+1. If the statement-If the condition is true, the statement will be executed.
+2. If else statement-This statement is used when both the true and false parts of a given condition are specified to be executed. When the condition is true, the statement inside the if block is executed; if the condition is false, the statement outside the if block is executed.
+3. Nested if statement-A Nested IF statement is one in which an If statement is nestled inside another If statement. This is used when a variable must be processed more than once.
+4. If…Elif..else statement-In this case, the If condition is evaluated first. If it is false, the Elif statement will be executed; if it also comes false, the Else statement will be executed.
+5. Short Hand if statement-Short Hand if statement is used when only one statement needs to be executed inside the if block. This statement can be mentioned in the same line which holds the If statement.
+6. Short Hand if-else statement-It is used to mention If-else statements in one line in which there is only one statement to execute in both if and else blocks. In simple words, If you have only one statement to execute, one for if, and one for else, you can put it all on the same line.
+
+Q.write shorrt notes on looping statement
+A loop statement allows us to execute a statement or group of statements multiple times.
+1while loop
+Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.
+2for loop
+Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+3nested loops
+You can use one or more loop inside any another while, for or do..while loop.
+
+Q.program on loop.
+(while loopp)
+count = 0
+while (count < 3):   
+    count = count + 1
+    print("Hello Geek")
+
+Q.program on condition
+if condition.
+a = 10  
+b = 20  
+if a<b:  
+  print("a is less than b") 
+
+
+
+UNIT 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
