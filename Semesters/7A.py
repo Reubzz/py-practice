@@ -1,17 +1,15 @@
-from unittest import result
-
 
 class Student:
     def _init_(self, name, sex, course, results):
         self.name = name
         self.sex = sex
         self.course = course
-        self.result = results
+        self.results = results
     def display(self, name, sex, course, results):
         self.name = name
         self.sex = sex
         self.course = course
-        self.result = results
+        self.results = results
         print("Name : ", self.name)
         print("Sex : ", self.sex)
         print("Course : ", self.course)
